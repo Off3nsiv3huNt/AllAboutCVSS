@@ -1,0 +1,87 @@
+CVSS Score:
+==========
+The CVSS Score, or Common Vulnerability Scoring System Score, is a numerical score that represents the severity of a security vulnerability. 
+The CVSS Score is calculated using the CVSS framework, which provides a standardized way of measuring the severity of vulnerabilities based on their intrinsic qualities, temporal factors, and environmental factors.
+The CVSS Score is a value between 0 and 10, with higher scores indicating more severe vulnerabilities. The score is calculated based on several metrics, including the attack vector, attack complexity, privileges required,
+user interaction required, and impact of the vulnerability. These metrics are weighted based on their potential impact on the vulnerability.
+
+The CVSS Score is a useful tool for security professionals, vendors, and developers, as it provides a consistent and objective way of measuring the severity of vulnerabilities. 
+This enables them to prioritize their response to vulnerabilities based on their severity and allocate resources more effectively to mitigate the risks posed by vulnerabilities.
+The CVSS Score is often included in security advisories and vulnerability reports to communicate the severity of vulnerabilities to users and customers. By understanding the CVSS Score,
+users and customers can make informed decisions about the level of risk posed by vulnerabilities and take appropriate action to mitigate those risks.
+
+In summary, the CVSS Score is a numerical score that represents the severity of a security vulnerability, calculated using the CVSS framework. It is a useful tool for security professionals, vendors, and 
+developers to prioritize their response to vulnerabilities and communicate the severity of vulnerabilities to users and customers.
+
+
+Vulnerability Scoring System: CVSS Rating Methodology:
+======================================================
+
+The scoring system provides a simple and straightforward numeric system for establishing the potential threat individual components pose to a system.
+The Base Score breakdown includes:
+
+    0.0 = No threat to the system
+    0.1-3.9 = Low
+    4.0-6.8 = Medium
+    7.0-8.9 = High
+    9.0 - 10.0 = Critical
+
+The lower the score, the less risky the vulnerability poses to the entire system, whereas a 10.0 score needs to be addressed immediately.
+
+Components of CVSS Score Methodology:
+
+A US-based non-profit organization, FIRST(http://first.org/) and NVD(https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) produces the CVSS methodology, with the latest iteration being version 3.1. 
+The core metric here, called the Base, can be impacted by the Temporal and Environmental metrics results.
+The base metrics are compiled to create a universal standard that can function across industry boundaries. A CVSS Base Score utilizes a vector string to accomplish this which is a dynamic array that provides accurate and consistent
+vulnerability severity scores.
+
+Cybersecurity practitioners utilizing this framework to evaluate a system will provide the Base score, and if necessary, the Temporal score. Afterwhich, the final decision rests with the end-user to calculate 
+and integrate the Environmental Score, based upon environmental factors unique to the business and system.
+
+
+Base Score:
+===========
+
+The Base Score is a component of the Common Vulnerability Scoring System (CVSS) that provides a standardized way of measuring the intrinsic qualities of a vulnerability. It is meant to assessThe CVSS scoring method intends 
+to give a uniform framework that different businesses may use to evaluate the severity of cybersecurity vulnerabilities, which is one of its main advantages.
+The adoption of each solution provider's preferred scoring system should be permitted by accepted practise. System administrators, however, historically had to juggle several solution techniques to figure out which 
+vulnerability should be a remediation priority since there wasn't a standard baseline.
+The creation of the CVSS scoring system has given cybersecurity teams and IT service providers an open framework to evaluate any IT environment. This implies that, regardless of industry, individual companies, 
+organisations, and governments may depend on information security specialists to record the effect of attacks inside their systems and evaluate them by severity more consistently.The CVSS score system gives businesses a 
+standardised formula that enables them to comply with security standards placed on their particular industry, which is a secondary advantage of adoption. Utilising CVSS 
+may also help your compliance programmes as most compliance frameworks call for a common ranking system, such as the CVSS system, for rating and categorising vulnerabilities. the severity of a 
+vulnerability based on its characteristics, without taking into account any mitigating or aggravating factors that may be present in a specific environment.
+The Base Score is calculated based on several metrics, including the attack vector, attack complexity, privileges required, user interaction required, and impact of the vulnerability.
+These metrics are weighted based on their potential impact on the vulnerability.
+The Base Score is used in CVSS because it provides a consistent and objective way of assessing the severity of vulnerabilities. This enables security professionals to prioritize their response
+to vulnerabilities based on their severity, and to allocate resources more effectively to mitigate the risks posed by vulnerabilities.
+The Base Score is also useful for vendors and developers, as it provides a way to compare the severity of vulnerabilities across different products and platforms. This can help them prioritize their 
+own remediation efforts and communicate the severity of vulnerabilities to their customers.
+
+In summary, the Base Score is an important component of CVSS because it provides a standardized and objective way of measuring the severity of vulnerabilities based on their intrinsic qualities. 
+This enables security professionals, vendors, and developers to prioritize their response to vulnerabilities and allocate resources more effectively to mitigate the risks posed by them.
+
+Temporal Score:
+==============
+The Temporal Score is a component of the Common Vulnerability Scoring System (CVSS) that provides a measure of the current risk posed by a vulnerability, taking into account the temporal factors that can affect the severity of the vulnerability over time.
+Temporal factors include the availability of patches or workarounds, the availability of exploits in the wild, and the maturity of the vulnerability information. The Temporal Score is calculated based on the Base Score, which measures the intrinsic qualities of a vulnerability, and modifies it based on these temporal factors.
+The Temporal Score is useful in CVSS because it allows security professionals to prioritize their response to vulnerabilities based on the likelihood of the vulnerability being exploited in the near future. For example, if a vulnerability has a high Base Score but a low Temporal Score because a patch is available, it may not be as high of a priority as a vulnerability with a lower Base Score but a higher Temporal Score because an exploit is actively being used in the wild.
+The Temporal Score is also useful for vendors and developers, as it provides a way to communicate the current risk posed by a vulnerability to their customers. For example, a vendor may issue a security advisory that includes a CVSS Temporal Score to inform customers of the current risk posed by a vulnerability and any steps they can take to mitigate that risk.
+In summary, the Temporal Score is an important component of CVSS because it provides a measure of the current risk posed by a vulnerability, taking into account the temporal factors that can affect the severity of the vulnerability over time. This enables security professionals, vendors, and developers to prioritize their response to vulnerabilities and communicate the current risk posed by them to their customers.
+
+Environmental Score:
+====================
+The Environmental Score is a component of the Common Vulnerability Scoring System (CVSS) that takes into account the factors that are specific to the environment in which the vulnerability exists. It is meant to provide a more accurate and tailored assessment of the risk posed by a vulnerability to a particular organization, system, or application.
+The Environmental Score is calculated by taking the Base Score, which is a measure of the intrinsic qualities of a vulnerability, and modifying it based on the unique characteristics of the environment in which the vulnerability exists. These modifications may include factors such as the value of the assets at risk, the sensitivity of the data involved, the security controls in place, and the potential impact of an attack.
+The Environmental Score is useful in CVSS because it allows organizations to more accurately assess the risk posed by a vulnerability in their specific environment. Two organizations may have the same vulnerability, but the risk to each organization may be different due to their unique environments. The Environmental Score enables organizations to tailor their risk management strategies to their specific needs and circumstances.
+In summary, the Environmental Score is an important component of CVSS because it enables organizations to more accurately assess the risk posed by vulnerabilities in their unique environments, and tailor their risk management strategies accordingly.
+
+Benefits of Using the CVSS Scoring System:
+=========================================
+The CVSS scoring method intends to give a uniform framework that different businesses may use to evaluate the severity of cybersecurity vulnerabilities, which is one of its main advantages.
+
+The adoption of each solution provider's preferred scoring system should be permitted by accepted practise. System administrators, however, historically had to juggle several solution techniques to figure out which vulnerability should be a remediation priority since there wasn't a standard baseline.
+
+The creation of the CVSS scoring system has given cybersecurity teams and IT service providers an open framework to evaluate any IT environment. This implies that, regardless of industry, individual companies, organisations, and governments may depend on information security specialists to record the effect of attacks inside their systems and evaluate them by severity more consistently.
+
+The CVSS score system gives businesses a standardised formula that enables them to comply with security standards placed on their particular industry, which is a secondary advantage of adoption. Utilising CVSS may also help your compliance programmes as most compliance frameworks call for a common ranking system, such as the CVSS system, for rating and categorising vulnerabilities.
